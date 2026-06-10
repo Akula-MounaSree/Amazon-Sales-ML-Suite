@@ -1,14 +1,10 @@
 import streamlit as st
-st.set_page_config(page_title="Amazon Sales ML Suite", layout='wide')
-st.title("Amazon Sales ML Suite")
-st.image("https://etimg.etb2bimg.com/photo/114184053.cms")
-import streamlit as st
-
 st.set_page_config(
     page_title="Amazon Sales ML Suite",
     page_icon="📦",
     layout="wide"
 )
+st.image("https://etimg.etb2bimg.com/photo/114184053.cms")
 
 # Custom CSS
 st.markdown("""
