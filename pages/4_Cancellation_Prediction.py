@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score
 st.title("Cancellation Prediction")
 st.image("https://static.vecteezy.com/system/resources/previews/072/958/101/non_2x/open-cardboard-box-with-red-cross-symbol-indicating-delivery-rejection-or-cancellation-vector.jpg")
-df=pd.read_csv("Amazon Sale Report.csv", low_memory=False)
+df=pd.read_csv("Amazon Sale Report.csv.gz", low_memory=False)
 df['Cancelled']=np.where(df['Status'].str.contains("Cancelled", na=False), 1, 0)
 features=['Category','Size','Qty','Fulfilment','Amount']
 target="Cancelled"
